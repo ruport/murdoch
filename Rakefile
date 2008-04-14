@@ -10,10 +10,10 @@ end
 
 spec = Gem::Specification.new do |spec|
   spec.name = "murdoch"
-  spec.version = "1.1.0"
+  spec.version = "1.0.0"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "A generalized Ruby report generation and templating engine."
-  spec.files =  Dir.glob("lib/*")+["Rakefile"]
+  spec.files =  Dir.glob("lib/**/**/*")+["Rakefile"]
   spec.require_path = "lib"
   
   spec.test_files = Dir[ "test/*_test.rb" ]
