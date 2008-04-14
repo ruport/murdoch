@@ -13,7 +13,7 @@ spec = Gem::Specification.new do |spec|
   spec.version = "1.1.0"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "A generalized Ruby report generation and templating engine."
-  spec.files =  Dir.glob("lib/*})+["Rakefile"]
+  spec.files =  Dir.glob("lib/*")+["Rakefile"]
   spec.require_path = "lib"
   
   spec.test_files = Dir[ "test/*_test.rb" ]
@@ -22,7 +22,7 @@ spec = Gem::Specification.new do |spec|
   spec.add_dependency('ruport-util','= 0.14.0')
   spec.add_dependency('acts_as_reportable', '= 1.1.0')
   spec.author = "Gregory Brown"
-  spec.email = "  gregory.t.brown@gmail.com"
+  spec.email = "gregory.t.brown@gmail.com"
   spec.rubyforge_project = "ruport"
   spec.homepage = "http://rubyreports.org"
   spec.description = <<END_DESC
