@@ -10,7 +10,7 @@ end
 
 spec = Gem::Specification.new do |spec|
   spec.name = "murdoch"
-  spec.version = "1.0.0"
+  spec.version = "1.0.1"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "A generalized Ruby report generation and templating engine."
   spec.files =  Dir.glob("lib/**/**/*")+["Rakefile"]
@@ -18,9 +18,10 @@ spec = Gem::Specification.new do |spec|
   
   spec.test_files = Dir[ "test/*_test.rb" ]
   spec.has_rdoc = true
+  spec.add_dependency('activerecord')
   spec.add_dependency('ruport', '= 1.6.1')
   spec.add_dependency('ruport-util','= 0.14.0')
-  spec.add_dependency('acts_as_reportable', '= 1.1.0')
+  spec.add_dependency('acts_as_reportable', '= 1.1.1')
   spec.author = "Gregory Brown"
   spec.email = "gregory.t.brown@gmail.com"
   spec.rubyforge_project = "ruport"
